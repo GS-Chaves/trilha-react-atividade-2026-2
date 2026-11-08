@@ -1,0 +1,18 @@
+{
+  "name": "Trilha React",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "postCreateCommand": "npm ci",
+  "forwardPorts": [5173],
+  "portsAttributes": {
+    "5173": {
+      "label": "Trilha • aplicação React",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["MS-CEINTL.vscode-language-pack-pt-BR"],
+      "settings": { "editor.tabSize": 2, "files.insertFinalNewline": true }
+    }
+  }
+}
