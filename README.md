@@ -26,15 +26,15 @@ O build gera a pasta `dist`. A prévia de produção usa o endereço informado n
 
 ## GitHub Codespaces — exigência da atividade
 
-O projeto inclui `.devcontainer/devcontainer.json`, com Node.js 22, instalação das dependências, extensão de português do VS Code e encaminhamento da porta 5173. **A configuração está preparada; a execução e a validação no Codespaces ainda precisam ser realizadas.**
+O projeto inclui `.devcontainer/devcontainer.json`, com Node.js 22, instalação das dependências, extensão de português do VS Code e encaminhamento da porta 5173. **Ambiente criado e aplicação compilada e executada no GitHub Codespaces em 08/11/2026.**
 
-1. Crie ou escolha um repositório no GitHub.
-2. Envie o conteúdo desta pasta para a raiz do repositório, incluindo `package-lock.json` e `.devcontainer`. Não envie `node_modules`, `dist` ou relatórios de testes.
-3. No repositório, selecione **Code → Codespaces → Create codespace on main**; o nome final acompanha a branch escolhida.
-4. Aguarde a preparação do ambiente. A configuração executa `npm ci` automaticamente; se houver falha ou interrupção, execute o comando no terminal.
-5. No terminal do Codespaces, execute `npm run dev`.
-6. Abra a aba **Ports/Portas** e a prévia da porta **5173** no navegador. Use o endereço encaminhado pelo Codespaces.
-7. Confira as funcionalidades e faça as alterações e a revisão do código nesse ambiente, como solicitado no enunciado.
+1. Abra o [repositório privado GS-Chaves/trilha-react-atividade-2026-2](https://github.com/GS-Chaves/trilha-react-atividade-2026-2) conectado à sua conta GS-Chaves.
+2. Abra o [Codespace preparado](https://symmetrical-parakeet-pxp74qw45x9hxwr.github.dev/). Também é possível encontrá-lo em **Code → Codespaces** no repositório.
+3. Se o ambiente estiver parado, aguarde sua retomada e execute `npm run dev` no terminal.
+4. Abra a aba **Ports/Portas** e a prévia da porta **5173** no navegador. A [aplicação no Codespaces](https://symmetrical-parakeet-pxp74qw45x9hxwr-5173.app.github.dev/) exige a sessão autorizada e o servidor em execução.
+5. Revise e personalize o código nesse ambiente antes da apresentação.
+
+Para criar outro Codespace a partir do mesmo repositório, use **Code → Codespaces → Create codespace on main**. A configuração instala as dependências com `npm ci`. Caso utilize outro repositório, copie o conteúdo desta pasta para sua raiz, incluindo `package-lock.json` e `.devcontainer`, sem `node_modules`, `dist` ou relatórios de teste.
 
 A configuração de ambiente segue o mecanismo de [dev containers documentado pelo GitHub](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers).
 
@@ -92,7 +92,7 @@ O código contempla componentes funcionais, props, estado local, hooks, eventos,
 
 React e React DOM compõem a aplicação; Vite cuida do desenvolvimento e build. Playwright é usado somente nos testes. Não há biblioteca externa de componentes visuais. Para detalhes da ferramenta de desenvolvimento, consulte o [guia oficial do Vite](https://vite.dev/guide/).
 
-O uso efetivo do Codespaces permanece uma etapa de ambiente a validar. A gravação e o envio do vídeo exigido pelo professor são etapas separadas da implementação do sistema.
+A preparação inicial foi feita localmente; a compilação e a execução também foram validadas no Codespaces. A gravação e o envio do vídeo exigido pelo professor são etapas separadas da implementação do sistema.
 
 ## Verificar o funcionamento
 
@@ -118,4 +118,12 @@ Faça também uma revisão manual nas larguras **375 px, 768 px e 1440 px**:
 8. Feche uma notificação manualmente; em outra ação, aguarde o desaparecimento automático.
 9. Abra **Reiniciar progresso**, cancele e confira as marcações. Repita e confirme para zerá-las.
 
-Essas verificações devem ser repetidas na prévia do Codespaces antes da apresentação.
+### Validação realizada em 08/11/2026
+
+- Compilação de produção aprovada localmente e no GitHub Codespaces.
+- 12 testes automatizados aprovados em Chromium, incluindo persistência, teclado, foco, filtros, limites de paginação, confirmação de reinício e larguras 375/768/1440 px.
+- Revisão visual de celular, tablet e desktop, sem rolagem horizontal da página.
+- Auditoria automatizada de acessibilidade em dez estados (cinco no desktop e cinco no celular), sem violações detectadas após ajustes de contraste. Uma auditoria automática não substitui testes com pessoas e tecnologias assistivas.
+- Abertura de aula, conclusão, atualização da barra e notificação verificadas na aplicação executada pelo Codespaces.
+
+Antes da apresentação, confirme que o Codespace está ativo e percorra os componentes com suas próprias palavras.
