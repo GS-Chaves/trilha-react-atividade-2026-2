@@ -31,7 +31,7 @@ O projeto inclui `.devcontainer/devcontainer.json`, com Node.js 22, instalação
 1. Abra o [repositório privado GS-Chaves/trilha-react-atividade-2026-2](https://github.com/GS-Chaves/trilha-react-atividade-2026-2) conectado à sua conta GS-Chaves.
 2. Abra o [Codespace preparado](https://symmetrical-parakeet-pxp74qw45x9hxwr.github.dev/). Também é possível encontrá-lo em **Code → Codespaces** no repositório.
 3. Se o ambiente estiver parado, aguarde sua retomada e execute `npm run dev` no terminal.
-4. Abra a aba **Ports/Portas** e a prévia da porta **5173** no navegador. A [aplicação no Codespaces](https://symmetrical-parakeet-pxp74qw45x9hxwr-5173.app.github.dev/) exige a sessão autorizada e o servidor em execução.
+4. Abra a aba **Ports/Portas** e use **Open in Browser/Abrir no navegador** na porta **5173**. A [aplicação no Codespaces](https://symmetrical-parakeet-pxp74qw45x9hxwr-5173.app.github.dev/) exige a sessão autorizada e o servidor em execução.
 5. Revise e personalize o código nesse ambiente antes da apresentação.
 
 Para criar outro Codespace a partir do mesmo repositório, use **Code → Codespaces → Create codespace on main**. A configuração instala as dependências com `npm ci`. Caso utilize outro repositório, copie o conteúdo desta pasta para sua raiz, incluindo `package-lock.json` e `.devcontainer`, sem `node_modules`, `dist` ou relatórios de teste.

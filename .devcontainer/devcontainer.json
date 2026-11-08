@@ -6,7 +6,7 @@
   "portsAttributes": {
     "5173": {
       "label": "Trilha • aplicação React",
-      "onAutoForward": "openPreview"
+      "onAutoForward": "notify"
     }
   },
   "customizations": {
